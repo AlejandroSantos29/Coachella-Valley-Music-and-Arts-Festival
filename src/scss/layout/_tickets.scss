@@ -1,0 +1,66 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.boletos{
+    padding: 5rem 0;
+    h3{
+        text-align: center;
+        color: v.$blancoAhumado;
+        margin-bottom: 2rem;
+    }
+
+    .contenedor-boletos{
+        @include m.tablet() {
+            @include m.grid(2, 5rem)
+        }
+    }
+}
+
+.pase{
+    color: v.$grisCarbon;
+
+    .nombre-pase{
+        text-align: center;
+        font-size: 2.8rem;
+        color: v.$blancoAhumado;
+    }
+
+    &-header,
+    &-footer{
+        padding: .5rem;
+        
+        p{
+            text-align: center;
+            color: v.$blancoAhumado;
+            margin: 0;
+        }
+    }
+
+
+    &-header{
+        background-color: v.$rosaPolvoriento;
+        p{
+            text-transform: uppercase;
+            font-size: 1.6rem;
+        }
+    }
+    &-body{
+        background-color: v.$blancoAhumado;
+        ul{
+            @include m.list-reset;
+            li,
+            :nth-child(odd){
+                background-color: v.$blancoAhumado;
+                padding: 1rem;
+                border-bottom: 1px solid #e1e1e1;
+            }
+        }
+    }
+    &-footer{
+        background-color: v.$amarilloSoleado;
+        p{
+            font-size: 2.4rem;
+            font-weight: bold;
+        }
+    }
+}

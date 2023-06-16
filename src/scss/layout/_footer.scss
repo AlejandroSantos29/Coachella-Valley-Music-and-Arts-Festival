@@ -1,0 +1,11 @@
+@use 'base/variables' as v;
+
+.cr-footer{
+    background-color: v.$rosaPolvoriento;
+    padding: 1rem;
+    p{
+        margin: 0;
+        text-align: center;
+        color: v.$blancoAhumado;
+    }
+}
