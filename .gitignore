@@ -1,1 +1,25 @@
+# Node.js
 node_modules/
+
+# Visual Studio Code
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Logs and databases
+*.log
+*.sqlite
+*.log.*
+
+# Dependency directories
+vendor/
